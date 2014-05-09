@@ -39,12 +39,12 @@ function contador (futuro,strfaltam,strcalback) {
 
 
 	if (dd+hh+mm+ss > 0) {
-		document.getElementById('contador').innerText = faltam;
+		document.getElementById('contador').textContent = faltam;
 	} else {
 		if(!isFerias){
 			isFerias = true;
 		} else {
-			document.getElementById('contador').innerText = strcalback;
+			document.getElementById('contador').textContent = strcalback;
 
 		}
 	}
