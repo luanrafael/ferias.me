@@ -38,7 +38,7 @@ function contador (futuro,strfaltam,strcalback) {
 	faltam += fhoras;
 	
 	if(screen.width < 400){
-		faltam = "FERIAS\n" + fhoras;
+		faltam = "FERIAS<br>" + fhoras;
 	}
 
 	if (dd+hh+mm+ss > 0) {
