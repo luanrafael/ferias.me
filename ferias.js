@@ -36,7 +36,10 @@ function contador (futuro,strfaltam,strcalback) {
 	var fhoras = formatstr(hh) + ':' + formatstr(mm) + ':' + formatstr(ss);
 
 	faltam += fhoras;
-
+	
+	if(screen.width < 400){
+		faltam = "FERIAS\n" + fhoras;
+	}
 
 	if (dd+hh+mm+ss > 0) {
 		document.getElementById('contador').textContent = faltam;
