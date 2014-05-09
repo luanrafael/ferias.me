@@ -24,11 +24,11 @@ function atualizaContador() {
 	faltam += (toString(mm).length) ? mm+' min e ' : '';
 	faltam += ss+' seg';
 	if (dd+hh+mm+ss > 0) {
-		document.getElementById('contador').innerHTML = faltam;
+		document.getElementById('contador').innerText = faltam;
 		setTimeout(atualizaContador,1000);
 
 	} else {
-		document.getElementById('contador').innerHTML = 'CHEGOU!!!!';
+		document.getElementById('contador').innerText = 'CHEGOU!!!!';
 		setTimeout(atualizaContador,1000);
 	}
 
