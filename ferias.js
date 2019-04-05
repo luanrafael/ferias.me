@@ -8,7 +8,7 @@ var ferias = new Date(2019,4,4,HH,MI,SS);
 var retorno = new Date(2019,4,27,13,00,00);
 
 
-var isFerias = true;
+var isFerias = false;
 
 function atualizaContador() {
 
